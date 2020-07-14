@@ -44,7 +44,7 @@ p {
   margin: 25px 0;
 }
 
-.main-content {
+.main-content, .survey-content {
   background-color: #212427;
   margin: 80px 140px 100px;
   padding: 60px 100px;
@@ -78,6 +78,26 @@ button:hover {
   margin-left: 20%;
   height: 390px;
   display: inline-block;
+}
+
+/* SURVEY */
+
+form {
+  padding: 20px 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.survey-content h2 {
+  font-size: 38px;
+}
+
+.survey-content h2, .survey-content p {
+  text-align: center;
+}
+
+.survey-content form p {
+  text-align: left;
 }
 
 /* FOOTER */
