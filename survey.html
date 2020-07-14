@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Quinn</title>
+    <meta charset="UTF-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <img id="logo" src="assets/images/quinn-logo.png" alt="company logo" />
+        <div class="header-content-tagline">
+          <h2>Skincare solutions for men</h2>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="survey-content">
+        <h2>tell us about your skin</h2>
+        <p>
+          We are here to help you build a healthy skincare routine.  No more confusion and frustration.  <br/>Just five clicks!
+        </p>
+        <form action="#">
+          <p>What's your skin type?</p>
+          <formset>
+            <input type="radio" id="acne-prone" name="skintype" value="acne-prone">
+            <label for="acne-prone">Acne-prone</label>
+            <input type="radio" id="dry" name="skintype" value="dry">
+            <label for="dry">Dry</label>
+            <input type="radio" id="oily" name="skintype" value="oily">
+            <label for="oily">Oily</label>
+            <input type="radio" id="sensitive" name="skintype" value="sensitive">
+            <label for="sensitive">Sensitive</label>
+            <input type="radio" id="combination" name="skintype" value="combination">
+            <label for="combination">Combination</label>
+            <input type="radio" id="normal" name="skintype" value="normal">
+            <label for="normal">Normal</label>
+          </formset>
+          <p>What's your top skin concern? (Select up to 3)</p>
+          <formset>
+            <input type="checkbox" id="dryness" name="dryness">
+            <label for="dryness">Dryness</label>
+            <input type="checkbox" id="acne" name="acne">
+            <label for="acne">Acne</label>
+            <input type="checkbox" id="large-pores" name="large-pores">
+            <label for="large-pores">Large pores</label>
+            <input type="checkbox" id="oiliness" name="oiliness">
+            <label for="oiliness">Oiliness</label>
+            <input type="checkbox" id="aging" name="aging">
+            <label for="aging">Aging</label>
+            <input type="checkbox" id="razor-bumps" name="razor-bumps">
+            <label for="razor-bumps">Razor bumps/irritation</label>
+            <input type="checkbox" id="redness" name="redness">
+            <label for="redness">Redness</label>
+            <input type="checkbox" id="sun-damage" name="sun-damage">
+            <label for="sun-damage">Sun damage</label>
+          </formset>
+          <p>What products are you most interested in? (Select up to 3)</p>
+          <formset>
+            <input type="checkbox" id="cleanser" name="cleanser">
+            <label for="cleanser">Cleanser</label>
+            <input type="checkbox" id="moisturizer" name="moisturizer">
+            <label for="moisturizer">Moisturizer</label>
+            <input type="checkbox" id="spf" name="spf">
+            <label for="spf">SPF</label>
+            <input type="checkbox" id="shaving-cream" name="shaving-cream">
+            <label for="shaving-cream">Shaving cream</label>
+            <input type="checkbox" id="deoderant" name="deoderant">
+            <label for="deoderant">Deoderant</label>
+            <input type="checkbox" id="facial-hair" name="facial-hair">
+            <label for="facial-hair">Facial hair care</label>
+            <input type="checkbox" id="face-masks" name="face-masks">
+            <label for="face-masks">Face masks</label>
+          </formset>
+          <formset>
+            <p>What is your preferred budget?</p>
+            <input type="radio" id="min-budget" name="budget" value="min-budget">
+            <label for="min-budget">$25 or less per item</label>
+            <input type="radio" id="med-budget" name="budget" value="med-budget">
+            <label for="med-budget">$25-50 per item</label>
+            <input type="radio" id="max-budget" name="budget" value="max-budget">
+            <label for="max-budget">Any amount</label>
+          </formset>
+          <formset>
+            <p>What scent do you prefer?</p>
+            <input type="radio" id="citrus" name="scent" value="citrus">
+            <label for="citrus">Citrus</label>
+            <input type="radio" id="fresh" name="scent" value="fresh">
+            <label for="fresh">Fresh</label>
+            <input type="radio" id="woodsy" name="scent" value="woodsy">
+            <label for="woodsy">Woodsy</label>
+            <input type="radio" id="none" name="scent" value="none">
+            <label for="none">None</label>
+          </formset>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <h3>Quinn</h3>
+        <p>
+          New York, USA
+          <br/>hello@quinn.com
+        </p>
+        <ul>
+          <li>
+            <a href="www.facebook.com">
+              <img src="assets/images/facebook-icon.png">
+            </a>
+          </li>
+          <li>
+            <a href="www.twitter.com">
+              <img src="assets/images/twitter-icon.png">
+            </a>
+          </li>
+          <li>
+            <a href="www.instagram.com">
+              <img src="assets/images/instagram-icon.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
