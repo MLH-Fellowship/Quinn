@@ -100,12 +100,12 @@ label {
   margin: 10px 0;
 }
 
-/* [type=radio], [type=checkbox] {
+[type=radio], [type=checkbox] {
   position: absolute;
   opacity: 0;
   width: 0;
   height: 0;
-} */
+}
 
 [type=radio] + img, [type=checkbox] + img {
   cursor: pointer;
