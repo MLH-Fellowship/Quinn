@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css" />
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+    <script src="assets/scripts/survey.js"></script>
   </head>
   <body>
     <header>
@@ -24,136 +29,136 @@
         <p>
           We are here to help you build a healthy skincare routine.  No more confusion and frustration.  <br/>Just five clicks!
         </p>
-        <form action="#">
+        <form action="#" method="post">
           <formset>
             <p>What's your skin type?</p>
             <label>
               <input type="radio" name="skintype" value="acne-prone">
-              <img src="assets/images/acne-prone.png">
+              <img class="radio-img" src="assets/images/acne-prone.png">
             </label>
             <label>
               <input type="radio" name="skintype" value="dry">
-              <img src="assets/images/dry.png">
+              <img class="radio-img" src="assets/images/dry.png">
             </label>
             <label>
               <input type="radio" name="skintype" value="oily">
-              <img src="assets/images/oily.png">
+              <img class="radio-img" src="assets/images/oily.png">
             </label>
             <label>
               <input type="radio" name="skintype" value="sensitive">
-              <img src="assets/images/sensitive.png">
+              <img class="radio-img" src="assets/images/sensitive.png">
             </label>
             <label>
               <input type="radio" name="skintype" value="combo">
-              <img src="assets/images/combo.png">
+              <img class="radio-img" src="assets/images/combo.png">
             </label>
             <label>
               <input type="radio" name="skintype" value="normal">
-              <img src="assets/images/normal.png">
+              <img class="radio-img" src="assets/images/normal.png">
             </label>
           </formset>
           <formset>
             <p>What's your top skin concern? (Select up to 3)</p>
             <label>
               <input type="checkbox" name="dryness">
-              <img src="assets/images/dryness.png">
+              <img class="checkbox-img" src="assets/images/dryness.png">
             </label>
             <label>
               <input type="checkbox" name="acne">
-              <img src="assets/images/acne.png">
+              <img class="checkbox-img" src="assets/images/acne.png">
             </label>
             <label>
               <input type="checkbox" name="large-pores">
-              <img src="assets/images/large-pores.png">
+              <img class="checkbox-img" src="assets/images/large-pores.png">
             </label>
             <label>
               <input type="checkbox" name="oiliness">
-              <img src="assets/images/oiliness.png">
+              <img class="checkbox-img" src="assets/images/oiliness.png">
             </label>
             <label>
               <input type="checkbox" name="aging">
-              <img src="assets/images/aging.png">
+              <img class="checkbox-img" src="assets/images/aging.png">
             </label>
             <label>
               <input type="checkbox" name="razor-bumps">
-              <img src="assets/images/razor-bumps.png">
+              <img class="checkbox-img" src="assets/images/razor-bumps.png">
             </label>
             <label>
               <input type="checkbox" name="redness">
-              <img src="assets/images/redness.png">
+              <img class="checkbox-img" src="assets/images/redness.png">
             </label>
             <label>
               <input type="checkbox" name="sun-damage">
-              <img src="assets/images/sun-damage.png">
+              <img class="checkbox-img" src="assets/images/sun-damage.png">
             </label>
           </formset>
           <formset>
             <p>What products are you most interested in? (Select up to 3)</p>
             <label>
               <input type="checkbox" name="cleanser">
-              <img src="assets/images/cleanser.png">
+              <img class="checkbox-img" src="assets/images/cleanser.png">
             </label>
             <label>
               <input type="checkbox" name="moisturizer">
-              <img src="assets/images/moisturizer.png">
+              <img class="checkbox-img" src="assets/images/moisturizer.png">
             </label>
             <label>
               <input type="checkbox" name="spf">
-              <img src="assets/images/spf.png">
+              <img class="checkbox-img" src="assets/images/spf.png">
             </label>
             <label>
               <input type="checkbox" name="shaving-cream">
-              <img src="assets/images/shaving-cream.png">
+              <img class="checkbox-img" src="assets/images/shaving-cream.png">
             </label>
             <label>
               <input type="checkbox" name="deoderant">
-              <img src="assets/images/deoderant.png">
+              <img class="checkbox-img" src="assets/images/deoderant.png">
             </label>
             <label>
               <input type="checkbox" name="facial-hair">
-              <img src="assets/images/facial-hair-care.png">
+              <img class="checkbox-img" src="assets/images/facial-hair-care.png">
             </label>
             <label>
               <input type="checkbox" name="face-masks">
-              <img src="assets/images/face-masks.png">
+              <img class="checkbox-img" src="assets/images/face-masks.png">
             </label>
           </formset>
           <formset>
             <p>What is your preferred budget? (Per item)</p>
             <label>
               <input type="radio" name="budget" value="min-budget">
-              <img src="assets/images/25-or-less.png">
+              <img class="radio-img" src="assets/images/25-or-less.png">
             </label>
             <label>
               <input type="radio" name="budget" value="med-budget">
-              <img src="assets/images/twenty-five-to-fifty.png">
+              <img class="radio-img" src="assets/images/twenty-five-to-fifty.png">
             </label>
             <label>
               <input type="radio" name="budget" value="max-budget">
-              <img src="assets/images/any-amount.png">
+              <img class="radio-img" src="assets/images/any-amount.png">
             </label>
           </formset>
           <formset>
             <p>What scent do you prefer?</p>
             <label>
               <input type="radio" name="scent" value="citrus">
-              <img src="assets/images/citrus.png">
+              <img class="radio-img" src="assets/images/citrus.png">
             </label>
             <label>
               <input type="radio" name="scent" value="fresh">
-              <img src="assets/images/fresh.png">
+              <img class="radio-img" src="assets/images/fresh.png">
             </label>
             <label>
               <input type="radio" name="scent" value="woodsy">
-              <img src="assets/images/woodsy.png">
+              <img class="radio-img" src="assets/images/woodsy.png">
             </label>
             <label>
               <input type="radio" name="scent" value="none">
-              <img src="assets/images/none.png">
+              <img class="radio-img" src="assets/images/none.png">
             </label>
           </formset>
         </form>
-        <button type="submit">Submit</button>
+        <button class="submit-survey" type="submit">Submit</button>
       </div>
     </main>
     <footer>
