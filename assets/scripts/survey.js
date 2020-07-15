@@ -5,6 +5,7 @@ function radioSelection(e) {
 
   $(e.target).prev().prop('checked', true).trigger('click');
   $(e.target).addClass('selected');
+  updateSubmitStatus();
 }
 
 function checkboxSelection(e) {
@@ -14,6 +15,7 @@ function checkboxSelection(e) {
 
   if ($clickedImg[0].classList.contains('selected')) {
     $clickedImg.removeClass('selected');
+    updateSubmitStatus();
     return;
   }
 
@@ -31,6 +33,30 @@ function checkboxSelection(e) {
   }
 
   $clickedImg.addClass('selected');
+  updateSubmitStatus();
+}
+
+function updateSubmitStatus() {
+  if (formComplete()) {
+    enableSubmit();
+  } else {
+    disableSubmit();
+  }
+}
+
+function formComplete() {
+  return Array.from($('formset')).every(function(category, idx) {
+    let possibleAnswers = Array.from($(category).find('img'));
+    return possibleAnswers.some(answer => answer.classList.contains('selected'));
+  });
+}
+
+function disableSubmit() {
+  $('.submit-survey').attr('disabled', true);
+}
+
+function enableSubmit() {
+  $('.submit-survey').prop('disabled', false);
 }
 
 function submitSurvey(e) {
@@ -47,4 +73,5 @@ function bindEvents() {
 // on DOM ready event, bind event handlers
 $(function() {
   bindEvents();
+  formComplete();
 });
