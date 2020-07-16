@@ -15,7 +15,7 @@ def survey():
         return render_template('survey.html')
     else:
         #
-        print(request.form)
+        print(request.form['skintype'])
         return render_template('recommend.html')
 
 @app.route('/recommend')
