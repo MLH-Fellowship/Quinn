@@ -1,5 +1,4 @@
-from flask import render_template
-from flask import Flask
+from flask import Flask, request, redirect, render_template
 
 app = Flask(__name__)
 
@@ -14,6 +13,8 @@ def hello_world():
 def survey():
     if request.method == 'GET':
         return render_template('survey.html')
+    else:
+        return render_template('recommender.html')
 
 @app.route('/recommend')
 def recommend():
