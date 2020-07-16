@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Quinn</title>
+    <meta charset="UTF-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='stylesheets/style.css') }}" />
+    <link rel="shortcut icon" href="{{ url_for('static',filename='images/favicon.ico') }}" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <img id="logo" src="{{ url_for('static',filename='images/quinn-logo.png') }}" alt="company logo" />
+        <div class="header-content-tagline">
+          <h2>Skincare solutions for men</h2>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="survey-content">
+        <h2>tell us about your skin</h2>
+        <p>
+          We are here to help you build a healthy skincare routine.  No more confusion and frustration.  <br/>Just five clicks!
+        </p>
+        <form action="#">
+          <formset>
+            <p>What's your skin type?</p>
+            <label>
+              <input type="radio" name="skintype" value="acne-prone">
+              <img src="{{ url_for('static',filename='images/acne-prone.png') }}">
+            </label>
+            <label>
+              <input type="radio" name="skintype" value="dry">
+              <img src="{{ url_for('static',filename='images/dry.png') }}">
+            </label>
+            <label>
+              <input type="radio" name="skintype" value="oily">
+              <img src="{{ url_for('static',filename='images/oily.png') }}">
+            </label>
+            <label>
+              <input type="radio" name="skintype" value="sensitive">
+              <img src="{{ url_for('static',filename='images/sensitive.png') }}">
+            </label>
+            <label>
+              <input type="radio" name="skintype" value="combo">
+              <img src="{{ url_for('static',filename='images/combo.png') }}">
+            </label>
+            <label>
+              <input type="radio" name="skintype" value="normal">
+              <img src="{{ url_for('static',filename='images/normal.png') }}">
+            </label>
+          </formset>
+          <formset>
+            <p>What's your top skin concern? (Select up to 3)</p>
+            <label>
+              <input type="checkbox" name="dryness">
+              <img src="{{ url_for('static',filename='images/dryness.png')}}">
+            </label>
+            <label>
+              <input type="checkbox" name="acne">
+              <img src="{{ url_for('static',filename='images/acne.png')}}">
+            </label>
+            <label>
+              <input type="checkbox" name="large-pores">
+              <img src="{{ url_for('static',filename='images/large-pores.png') }}">
+            </label>
+            <label>
+              <input type="checkbox" name="oiliness">
+              <img src="{{ url_for('static',filename='images/oiliness.png') }}">
+            </label>
+            <label>
+              <input type="checkbox" name="aging">
+              <img src="{{ url_for('static',filename='images/aging.png') }}">
+            </label>
+            <label>
+              <input type="checkbox" name="razor-bumps">
+              <img src="{{ url_for('static',filename='images/razor-bumps.png') }}">
+            </label>
+            <label>
+              <input type="checkbox" name="redness">
+              <img src="{{ url_for('static',filename='images/redness.png') }}">
+            </label>
+            <label>
+              <input type="checkbox" name="sun-damage">
+              <img src="{{ url_for('static',filename='images/sun-damage.png') }}">
+            </label>
+          </formset>
+          <formset>
+            <p>What products are you most interested in? (Select up to 3)</p>
+            <label>
+              <input type="checkbox" name="cleanser">
+              <img src="{{ url_for('static',filename='images/cleanser.png') }}">
+            </label>
+            <label>
+              <input type="checkbox" name="moisturizer">
+              <img src="{{ url_for('static',filename='images/moisturizer.png') }}">
+            </label>
+            <label>
+              <input type="checkbox" name="spf">
+              <img src="{{ url_for('static',filename='images/spf.png') }}">
+            </label>
+            <label>
+              <input type="checkbox" name="shaving-cream">
+              <img src="{{ url_for('static',filename='images/shaving-cream.png') }}">
+            </label>
+            <label>
+              <input type="checkbox" name="deoderant">
+              <img src="{{ url_for('static',filename='images/deoderant.png') }}">
+            </label>
+            <label>
+              <input type="checkbox" name="facial-hair">
+              <img src="{{ url_for('static',filename='images/facial-hair-care.png') }}">
+            </label>
+            <label>
+              <input type="checkbox" name="face-masks">
+              <img src="{{ url_for('static',filename='images/face-masks.png') }}">
+            </label>
+          </formset>
+          <formset>
+            <p>What is your preferred budget? (Per item)</p>
+            <label>
+              <input type="radio" name="budget" value="min-budget">
+              <img src="{{ url_for('static',filename='images/25-or-less.png') }}">
+            </label>
+            <label>
+              <input type="radio" name="budget" value="med-budget">
+              <img src="{{ url_for('static',filename='images/twenty-five-to-fifty.png') }}">
+            </label>
+            <label>
+              <input type="radio" name="budget" value="max-budget">
+              <img src="{{ url_for('static',filename='images/any-amount.png') }}">
+            </label>
+          </formset>
+          <formset>
+            <p>What scent do you prefer?</p>
+            <label>
+              <input type="radio" name="scent" value="citrus">
+              <img src="{{ url_for('static',filename='images/citrus.png') }}">
+            </label>
+            <label>
+              <input type="radio" name="scent" value="fresh">
+              <img src="{{ url_for('static',filename='images/fresh.png') }}">
+            </label>
+            <label>
+              <input type="radio" name="scent" value="woodsy">
+              <img src="{{ url_for('static',filename='images/woodsy.png') }}">
+            </label>
+            <label>
+              <input type="radio" name="scent" value="none">
+              <img src="{{ url_for('static',filename='images/none.png') }}">
+            </label>
+          </formset>
+        </form>
+        <button type="submit">Submit</button>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <h3>Quinn</h3>
+        <p>
+          New York, USA
+          <br/>hello@quinn.com
+        </p>
+        <ul>
+          <li>
+            <a href="www.facebook.com">
+              <img src="assets/images/facebook-icon.png">
+            </a>
+          </li>
+          <li>
+            <a href="www.twitter.com">
+              <img src="assets/images/twitter-icon.png">
+            </a>
+          </li>
+          <li>
+            <a href="www.instagram.com">
+              <img src="assets/images/instagram-icon.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
