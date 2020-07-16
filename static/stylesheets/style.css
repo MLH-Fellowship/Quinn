@@ -44,7 +44,7 @@ p {
   margin: 25px 0;
 }
 
-.main-content, .survey-content {
+.main-content, .survey-content, .recommend-content {
   background-color: #212427;
   margin: 80px 140px 100px;
   padding: 60px 100px;
@@ -116,12 +116,19 @@ label {
   background-color: #2A322E;
 }
 
-.survey-content h2 {
+.survey-content h2, .recommend-content h2 {
   font-size: 38px;
 }
 
-.survey-content h2, .survey-content p {
+.survey-content h2, .survey-content p, .recommend-content h2, .recommend-content p {
   text-align: center;
+}
+
+/* RECOMMENDATIONS */
+
+.display-recommendations {
+  border-top: 1px solid #ece5dd;
+  padding: 20px 0;
 }
 
 /* FOOTER */
