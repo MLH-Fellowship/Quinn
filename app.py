@@ -14,7 +14,9 @@ def survey():
     if request.method == 'GET':
         return render_template('survey.html')
     else:
-        return render_template('recommender.html')
+        #
+        print(request.form)
+        return render_template('recommend.html')
 
 @app.route('/recommend')
 def recommend():
