@@ -13,8 +13,6 @@ Users will take a short survey regarding their skin concerns, and the app will r
 ## :earth_americas: View on the web:
 [Quinn](https://example.com)
 
-![The Quinn user survey](survey-screenshot.png)
-
 ## 🤓 Authors
 - [Amy Wang](https://github.com/xiwang129)
 - [Mwiza Simbeye](https://github.com/mwizasimbeye11)
