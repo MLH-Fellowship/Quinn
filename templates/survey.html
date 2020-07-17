@@ -12,27 +12,23 @@
       <formset>
         <p>What's your skin type?</p>
         <label>
-          <input type="radio" name="skintype" value="acne-prone">
-          <img class="radio-img" src="{{ url_for('static',filename='images/acne-prone.png') }}">
-        </label>
-        <label>
-          <input type="radio" name="skintype" value="dry">
+          <input type="radio" name="skintype" value="0">
           <img class="radio-img" src="{{ url_for('static',filename='images/dry.png') }}">
         </label>
         <label>
-          <input type="radio" name="skintype" value="oily">
+          <input type="radio" name="skintype" value="1">
           <img class="radio-img" src="{{ url_for('static',filename='images/oily.png') }}">
         </label>
         <label>
-          <input type="radio" name="skintype" value="sensitive">
+          <input type="radio" name="skintype" value="2">
           <img class="radio-img" src="{{ url_for('static',filename='images/sensitive.png') }}">
         </label>
         <label>
-          <input type="radio" name="skintype" value="combo">
+          <input type="radio" name="skintype" value="3">
           <img class="radio-img" src="{{ url_for('static',filename='images/combo.png') }}">
         </label>
         <label>
-          <input type="radio" name="skintype" value="normal">
+          <input type="radio" name="skintype" value="4">
           <img class="radio-img" src="{{ url_for('static',filename='images/normal.png') }}">
         </label>
       </formset>
@@ -74,46 +70,38 @@
       <formset>
         <p>What products are you most interested in? (Select up to 3)</p>
         <label>
-          <input type="checkbox" name="cleanser">
+          <input type="checkbox" name="product" value="2">
           <img class="checkbox-img" src="{{ url_for('static',filename='images/cleanser.png') }}">
         </label>
         <label>
-          <input type="checkbox" name="moisturizer">
+          <input type="checkbox" name="product" value="0">
           <img class="checkbox-img" src="{{ url_for('static',filename='images/moisturizer.png') }}">
         </label>
         <label>
-          <input type="checkbox" name="spf">
+          <input type="checkbox" name="product" value="1">
           <img class="checkbox-img" src="{{ url_for('static',filename='images/spf.png') }}">
         </label>
         <label>
-          <input type="checkbox" name="shaving-cream">
+          <input type="checkbox" name="product" value="3">
           <img class="checkbox-img" src="{{ url_for('static',filename='images/shaving-cream.png') }}">
         </label>
         <label>
-          <input type="checkbox" name="deoderant">
-          <img class="checkbox-img" src="{{ url_for('static',filename='images/deoderant.png') }}">
-        </label>
-        <label>
-          <input type="checkbox" name="facial-hair">
-          <img class="checkbox-img" src="{{ url_for('static',filename='images/facial-hair-care.png') }}">
-        </label>
-        <label>
-          <input type="checkbox" name="face-masks">
+          <input type="checkbox" name="product" value="4">
           <img class="checkbox-img" src="{{ url_for('static',filename='images/face-masks.png') }}">
         </label>
       </formset>
       <formset>
         <p>What is your preferred budget? (Per item)</p>
         <label>
-          <input type="radio" name="budget" value="min-budget">
+          <input type="radio" name="budget" value="25">
           <img class="radio-img" src="{{ url_for('static',filename='images/25-or-less.png') }}">
         </label>
         <label>
-          <input type="radio" name="budget" value="med-budget">
+          <input type="radio" name="budget" value="50">
           <img class="radio-img" src="{{ url_for('static',filename='images/twenty-five-to-fifty.png') }}">
         </label>
         <label>
-          <input type="radio" name="budget" value="max-budget">
+          <input type="radio" name="budget" value="100">
           <img class="radio-img" src="{{ url_for('static',filename='images/any-amount.png') }}">
         </label>
       </formset>
