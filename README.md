@@ -15,7 +15,7 @@ a web browser-based app to recommend clean skincare products for men. Users will
 - [Ebonne Cabarrus](https://github.com/ebonnecab)
 - [Elizabeth Tackett](https://github.com/emtackett)
 
-Scribe was created for Summer 2020 MLH Fellowship Halfway Hackathon
+Quinn was created for Summer 2020 MLH Fellowship Halfway Hackathon
 
 ## 💻 Run locally
 - Clone the repository: `git clone https://github.com/MLH-Fellowship/Quinn.git`
