@@ -131,6 +131,40 @@ label {
   padding: 20px 0;
 }
 
+.display-recommendations-category {
+  padding: 40px;
+  background-color: #2A322E;
+}
+
+.display-recommendations-category + .display-recommendations-category {
+  margin-top: 40px;
+}
+
+.display-recommendations-category h3 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.display-recommendations-category li {
+  margin: 20px 0;
+}
+
+.display-recommendations-category li + li {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #fff;
+}
+
+.display-recommendations-category li a {
+  text-decoration: none;
+  color: #ece5dd;
+}
+
+.display-recommendations-category li p {
+  text-align: left;
+  font-size: 16px;
+}
+
 /* FOOTER */
 
 .footer-content {
