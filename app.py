@@ -3,15 +3,19 @@ from flask_wtf import Form
 from wtforms import IntegerField, StringField, SubmitField, SelectField, DecimalField
 from wtforms.validators import Required
 import pickle
+import numpy as np
+from sklearn.externals import joblib
 from database import models
 from sklearn import datasets
 
 app = Flask(__name__)
 
 print('model loading')
-with open('model.pkl', 'rb') as handle:
-    model = pickle.load(handle)
+model = joblib.load(open('model.pkl', 'rb'))
 print('model loaded')
+
+example = np.array([40, 1, 0, 1, 0, 1, 4]).reshape(1, 7)
+print(model.predict(example))
 
 @app.route('/')
 def hello_world():
