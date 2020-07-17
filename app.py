@@ -28,21 +28,21 @@ def survey():
     print(session)
     if request.method == 'GET':
         return render_template('survey.html')
-        
+
     form = models.SurveyForm(csrf_enabled=False)
     if request.method == 'POST':
         if form.validate():
-            return redirect('done')
+            # return redirect('done')
             session['price'] = form.q3.data
             session['skin_type'] = form.q1.data
             session['product_type'] = form.q_2.data
 
             survey_instance= [(session['price']), (session['skin_type']), (session['product_type'])]
-            
+            print(survey_instance)
         #TODO: add lines to return model recommendations
 
-            return redirect(url_for('home')
-        return render_template('recommend.html', form=form, **session)
+            # return redirect(url_for('home')
+            return render_template('recommend.html', form=form, **session)
 
 @app.route('/recommend')
 def recommend():
