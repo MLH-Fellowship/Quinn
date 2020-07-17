@@ -1,5 +1,11 @@
-# 💁🏽‍♂️ Quinn
-a web browser-based app to recommend clean skincare products for men. Users will take a short survey regarding their skin concerns, and the app will recommend them a curated selection of products.
+# 💁🏽‍♂️ [Quinn](https://example.com)
+A web app to recommend clean skincare products for men.
+
+Users will take a short survey regarding their skin concerns, and the app will recommend them a curated selection of products.
+
+![The Quinn homepage](landing1-screenshot.png)
+
+![The Quinn user survey](survey-screenshot.png)
 
 ## :hammer: Quinn is built with:
 - [Python3](https://www.python.org/downloads/)
@@ -22,6 +28,8 @@ Scribe was created for Summer 2020 MLH Fellowship Halfway Hackathon
 - From the command line, navigate to the Quinn directory and run the following:
 
 ```bash
+pip3 install --upgrade pip
+pip install -r requirements.txt
 flask run app.py
 ```
 
