@@ -21,7 +21,7 @@ Users will take a short survey regarding their skin concerns, and the app will r
 - [Ebonne Cabarrus](https://github.com/ebonnecab)
 - [Elizabeth Tackett](https://github.com/emtackett)
 
-Scribe was created for Summer 2020 MLH Fellowship Halfway Hackathon
+Quinn was created for Summer 2020 MLH Fellowship Halfway Hackathon
 
 ## 💻 Run locally
 - Clone the repository: `git clone https://github.com/MLH-Fellowship/Quinn.git`
