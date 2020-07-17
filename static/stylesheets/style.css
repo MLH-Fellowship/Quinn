@@ -1,0 +1,158 @@
+@import "reset.css";
+
+body {
+  font-family: 'Julius Sans One', sans-serif;
+  box-sizing: border-box;
+  background-color: #545557;
+  color: #ece5dd;
+}
+
+/* HEADER */
+
+header, footer {
+  background-color: #2A322E;
+}
+
+header {
+  height: 480px;
+}
+
+.header-content {
+  padding-top: 10px;
+}
+
+.header-content-tagline {
+  background-color: #212427;
+  position: relative;
+  left: 40%;
+  top: -120px;
+  max-width: 40%;
+  text-align: center;
+}
+
+.header-content-tagline h2 {
+  margin: 0 auto;
+  padding: 20px 10px;
+  font-size: 50px;
+}
+
+/* MAIN */
+
+p {
+  font-family: 'Open sans', sans-serif;
+  font-size: 22px;
+  margin: 25px 0;
+}
+
+.main-content, .survey-content, .recommend-content {
+  background-color: #212427;
+  margin: 80px 140px 100px;
+  padding: 60px 100px;
+}
+
+button {
+  font-family: 'Julius Sans One', sans-serif;
+  background-color: #ece5dd;
+  border: none;
+  font-size: 48px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 510px;
+  position: absolute;
+  margin-top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.spacer {
+  height: 20px;
+}
+
+#logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20%;
+  height: 390px;
+  display: inline-block;
+}
+
+/* SURVEY */
+
+form {
+  padding: 20px 0;
+  margin-bottom: 40px;
+  text-align: center;
+  border-top: 1px solid #ece5dd;
+}
+
+formset {
+  display: block;
+  margin-bottom: 70px;
+}
+
+label {
+  display: inline-block;
+  width: 20%;
+  margin: 10px 0;
+}
+
+[type=radio], [type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type=radio] + img, [type=checkbox] + img {
+  cursor: pointer;
+  border-radius: 62px;
+}
+
+[type=radio] + img.selected, [type=checkbox] + img.selected {
+  background-color: #2A322E;
+}
+
+.survey-content h2, .recommend-content h2 {
+  font-size: 38px;
+}
+
+.survey-content h2, .survey-content p, .recommend-content h2, .recommend-content p {
+  text-align: center;
+}
+
+/* RECOMMENDATIONS */
+
+.display-recommendations {
+  border-top: 1px solid #ece5dd;
+  padding: 20px 0;
+}
+
+/* FOOTER */
+
+.footer-content {
+  padding: 50px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.footer-content p {
+  font-size: 14px;
+}
+
+.footer-content li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer-content li img {
+  height: 20px;
+  width: 20px;
+}

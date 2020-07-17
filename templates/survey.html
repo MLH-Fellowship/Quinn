@@ -1,0 +1,143 @@
+{% extends "layout.html" %}
+{% block title %}Quinn{% endblock %}
+
+{% block content %}
+<main>
+  <div class="survey-content">
+    <h2>tell us about your skin</h2>
+    <p>
+      We are here to help you build a healthy skincare routine.  No more confusion and frustration.  <br/>Just five clicks!
+    </p>
+    <form action="/survey" method="post">
+      <formset>
+        <p>What's your skin type?</p>
+        <label>
+          <input type="radio" name="skintype" value="acne-prone">
+          <img class="radio-img" src="{{ url_for('static',filename='images/acne-prone.png') }}">
+        </label>
+        <label>
+          <input type="radio" name="skintype" value="dry">
+          <img class="radio-img" src="{{ url_for('static',filename='images/dry.png') }}">
+        </label>
+        <label>
+          <input type="radio" name="skintype" value="oily">
+          <img class="radio-img" src="{{ url_for('static',filename='images/oily.png') }}">
+        </label>
+        <label>
+          <input type="radio" name="skintype" value="sensitive">
+          <img class="radio-img" src="{{ url_for('static',filename='images/sensitive.png') }}">
+        </label>
+        <label>
+          <input type="radio" name="skintype" value="combo">
+          <img class="radio-img" src="{{ url_for('static',filename='images/combo.png') }}">
+        </label>
+        <label>
+          <input type="radio" name="skintype" value="normal">
+          <img class="radio-img" src="{{ url_for('static',filename='images/normal.png') }}">
+        </label>
+      </formset>
+      <formset>
+        <p>What's your top skin concern? (Select up to 3)</p>
+        <label>
+          <input type="checkbox" name="dryness">
+          <img class="checkbox-img" src="{{ url_for('static',filename='images/dryness.png')}}">
+        </label>
+        <label>
+          <input type="checkbox" name="acne">
+          <img class="checkbox-img" src="{{ url_for('static',filename='images/acne.png')}}">
+        </label>
+        <label>
+          <input type="checkbox" name="large-pores">
+          <img class="checkbox-img" src="{{ url_for('static',filename='images/large-pores.png') }}">
+        </label>
+        <label>
+          <input type="checkbox" name="oiliness">
+          <img class="checkbox-img" src="{{ url_for('static',filename='images/oiliness.png') }}">
+        </label>
+        <label>
+          <input type="checkbox" name="aging">
+          <img class="checkbox-img" src="{{ url_for('static',filename='images/aging.png') }}">
+        </label>
+        <label>
+          <input type="checkbox" name="razor-bumps">
+          <img class="checkbox-img" src="{{ url_for('static',filename='images/razor-bumps.png') }}">
+        </label>
+        <label>
+          <input type="checkbox" name="redness">
+          <img class="checkbox-img" src="{{ url_for('static',filename='images/redness.png') }}">
+        </label>
+        <label>
+          <input type="checkbox" name="sun-damage">
+          <img class="checkbox-img" src="{{ url_for('static',filename='images/sun-damage.png') }}">
+        </label>
+      </formset>
+      <formset>
+        <p>What products are you most interested in? (Select up to 3)</p>
+        <label>
+          <input type="checkbox" name="cleanser">
+          <img class="checkbox-img" src="{{ url_for('static',filename='images/cleanser.png') }}">
+        </label>
+        <label>
+          <input type="checkbox" name="moisturizer">
+          <img class="checkbox-img" src="{{ url_for('static',filename='images/moisturizer.png') }}">
+        </label>
+        <label>
+          <input type="checkbox" name="spf">
+          <img class="checkbox-img" src="{{ url_for('static',filename='images/spf.png') }}">
+        </label>
+        <label>
+          <input type="checkbox" name="shaving-cream">
+          <img class="checkbox-img" src="{{ url_for('static',filename='images/shaving-cream.png') }}">
+        </label>
+        <label>
+          <input type="checkbox" name="deoderant">
+          <img class="checkbox-img" src="{{ url_for('static',filename='images/deoderant.png') }}">
+        </label>
+        <label>
+          <input type="checkbox" name="facial-hair">
+          <img class="checkbox-img" src="{{ url_for('static',filename='images/facial-hair-care.png') }}">
+        </label>
+        <label>
+          <input type="checkbox" name="face-masks">
+          <img class="checkbox-img" src="{{ url_for('static',filename='images/face-masks.png') }}">
+        </label>
+      </formset>
+      <formset>
+        <p>What is your preferred budget? (Per item)</p>
+        <label>
+          <input type="radio" name="budget" value="min-budget">
+          <img class="radio-img" src="{{ url_for('static',filename='images/25-or-less.png') }}">
+        </label>
+        <label>
+          <input type="radio" name="budget" value="med-budget">
+          <img class="radio-img" src="{{ url_for('static',filename='images/twenty-five-to-fifty.png') }}">
+        </label>
+        <label>
+          <input type="radio" name="budget" value="max-budget">
+          <img class="radio-img" src="{{ url_for('static',filename='images/any-amount.png') }}">
+        </label>
+      </formset>
+      <formset>
+        <p>What scent do you prefer?</p>
+        <label>
+          <input type="radio" name="scent" value="citrus">
+          <img class="radio-img" src="{{ url_for('static',filename='images/citrus.png') }}">
+        </label>
+        <label>
+          <input type="radio" name="scent" value="fresh">
+          <img class="radio-img" src="{{ url_for('static',filename='images/fresh.png') }}">
+        </label>
+        <label>
+          <input type="radio" name="scent" value="woodsy">
+          <img class="radio-img" src="{{ url_for('static',filename='images/woodsy.png') }}">
+        </label>
+        <label>
+          <input type="radio" name="scent" value="none">
+          <img class="radio-img" src="{{ url_for('static',filename='images/none.png') }}">
+        </label>
+      </formset>
+    </form>
+    <button class="submit-survey" type="submit">Submit</button>
+  </div>
+</main>
+{% endblock %}
