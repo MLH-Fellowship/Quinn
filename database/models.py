@@ -1,5 +1,6 @@
 from .db import db
 from wtforms import Form, fields, validators
+from wtforms.validators import Required
 
 class SurveyForm(Form):
     skin_types = ('Combination', 'Dry', 'Oily','Combo', 'Normal', 'Sensitive')
@@ -8,9 +9,9 @@ class SurveyForm(Form):
     budget = ('$25 or Less', '$25-50', 'Any Amount')
 
 
-    q_1 = fields.SelectField(max_length=3, choices=skin_types, validators=[Required()])
-    q_2 = fields.SelectField(max_length=3, choices=product_types, validators=[Required()])
-    q_3 = fields.SelectField(max_length=1, choices=budget, validators=[Required()])
+    q_1 = fields.SelectField(choices=skin_types, validators=[Required()])
+    q_2 = fields.SelectField(choices=product_types, validators=[Required()])
+    q_3 = fields.SelectField(choices=budget, validators=[Required()])
  
 
-    submit = SubmitField('Submit')
+    submit = fields.SubmitField('Submit')

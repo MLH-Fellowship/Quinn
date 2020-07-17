@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect, render_template, session, url_forß
+from flask import Flask, request, redirect, render_template, session, url_for
 from flask_wtf import Form
 from wtforms import IntegerField, StringField, SubmitField, SelectField, DecimalField
 from wtforms.validators import Required
@@ -32,12 +32,13 @@ def survey():
     form = models.SurveyForm(csrf_enabled=False)
     if request.method == 'POST':
         if form.validate():
+            return redirect('done')
             session['price'] = form.q3.data
             session['skin_type'] = form.q1.data
             session['product_type'] = form.q_2.data
 
             survey_instance= [(session['price']), (session['skin_type']), (session['product_type'])]
-
+            
         #TODO: add lines to return model recommendations
 
             return redirect(url_for('home')
