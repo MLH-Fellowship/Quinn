@@ -3,4 +3,5 @@ flask-mongoengine==0.9.5
 gunicorn==20.0.4
 Jinja2==2.11.2
 numpy
-sklearn
+sklearn==0.21
+joblib
